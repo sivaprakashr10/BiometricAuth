@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger" class="ion-text-center">
+    <ion-title>Locked</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fallback">
+    <ion-icon name="lock-closed-outline" size="large"></ion-icon>
+    <ion-input
+      type="password"
+      [(ngModel)]="password"
+      placeholder="Password"
+    ></ion-input>
+    <ion-button (click)="unlock()" expand="full" shape="round">
+      unlock with password
+    </ion-button>
+    <ion-button (click)="openBiometricAuth()" expand="full" shape="round">
+      <ion-icon slot="icon-only" name="finger-print"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

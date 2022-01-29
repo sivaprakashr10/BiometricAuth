@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-title>Inside</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col sizeXs="12" class="ion-text-center">
+        Logout Time: {{(logoutTimer | async)*1000 | date: 'mm:ss'}}
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
